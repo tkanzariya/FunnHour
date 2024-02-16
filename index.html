@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Happy Hour</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Stylesheets -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Font Awesome -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <section class="colored-section" id="title">
+      <div class="container-fluid">
+        <!-- Nav Bar -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark" id="titleNav">
+          <a class="navbar-brand" href="">Happy Hour</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#targetNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="targetNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#features">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Title -->
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="big-heading">Enjoy and Grab every moment of Fun</h1>
+          </div>
+          <div class="col-lg-6">
+            <img
+              class="title-image"
+              src="/images/Cover.jpg"
+              alt="iphone-mockup"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <div
+      id="targetted"
+      data-bs-spy="scroll"
+      data-bs-target="#titleNav"
+      data-bs-offset="0"
+      class="scrollspy-example"
+      tabindex="0"
+    >
+      <!-- Features -->
+      <section class="white-section" id="features">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="feature-box col-lg-4">
+              <i class="icon fas fa-check-circle fa-4x"></i>
+              <h3 class="feature-title">Guaranteed Fun</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
+                illum.
+              </p>
+            </div>
+
+            <div class="feature-box col-lg-4">
+              <i class="icon fas fa-bullseye fa-4x"></i>
+              <h3 class="feature-title">Lorem ipsum.</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="feature-box col-lg-4">
+              <i class="icon fas fa-heart fa-4x"></i>
+              <h3 class="feature-title">Dolor sit amet.</h3>
+              <p>amet consectetur adipisicing Lorem, ipsum dolor.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+
+      <section class="colored-section" id="testimonials">
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="..." class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Press -->
+
+      <section class="colored-section" id="press">
+        <img class="press-logo" src="images/techcrunch.png" alt="tc-logo" />
+        <img class="press-logo" src="images/tnw.png" alt="tnw-logo" />
+        <img
+          class="press-logo"
+          src="images/bizinsider.png"
+          alt="biz-insider-logo"
+        />
+        <img class="press-logo" src="images/mashable.png" alt="mashable-logo" />
+      </section>
+      <!-- Call to Action -->
+
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img
+              src="/images/HTMAA-thumbnail.png"
+              class="d-block mx-lg-auto img-fluid"
+              alt="Bootstrap Themes"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Book your event Now!</h1>
+            <p class="lead">
+              Book your event now and specify your requirements so we can plan
+              out games accordingly and provide your with the best
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a
+                class="btn btn-primary btn-lg px-4 me-md-2"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfR9UlfF5SYqENrzTQfZqYzOhgzPh6_0GEwdjrcVQsLc5YkMw/viewform?usp=sf_link"
+                >Book Event</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+
+      <footer class="white-section" id="footer">
+        <div class="container-fluid">
+          <i class="social-icon fab fa-facebook-f"></i>
+          <i class="social-icon fab fa-twitter"></i>
+          <i class="social-icon fab fa-instagram"></i>
+          <i class="social-icon fas fa-envelope"></i>
+          <p>© Copyright 2024 Happy Hour</p>
+        </div>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
