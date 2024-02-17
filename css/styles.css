@@ -9,7 +9,12 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat-Bold";
 }
-
+#Gallery{
+  background-color: #FF8911;
+}
+.gallery-img{
+  height: 50rem;
+}
 p {
   color: #8f8f8f;
 }
@@ -61,8 +66,9 @@ p {
 }
 
 .nav-link {
-  font-size: 1.2rem;
-  font-family: "Montserrat-Light";
+  color: white;
+  font-size: 1.3rem;
+  font-family: Ubuntu;
 }
 
 /* Buttons */
@@ -71,7 +77,10 @@ p {
   margin: 5% 3% 5% 0;
 }
 
-/* Title Section */
+#Registration{
+  background-color: white
+  ;
+}
 
 #title {
   background-color: #f0b864;
@@ -118,47 +127,24 @@ p {
   color: #f0b864;
 }
 
-/* Testimonial Section */
-
-#testimonials {
-  background-color: #FF8911;
+.featurette{
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-family: "Fredoka", sans-serif;
 }
-
-.testimonial-text {
-  font-size: 3rem;
-  line-height: 1.5;
+.featurette h2{
+  font-family: "Fredoka", sans-serif;
 }
-
-.testimonial-image {
-  width: 10%;
-  border-radius: 100%;
-  margin: 20px;
+.feature-img{
+  border-radius: 10%;
+  box-shadow: 1px 1px 3px;
 }
-
-
-#press {
-  background-color: #FF8911;
-  padding-bottom: 3%;
+.right{
+  float: left;
 }
-
-.press-logo {
-  width: 15%;
-  margin: 20px 20px 50px;
-}
-
-/* Pricing Section */
-
-#pricing {
-  padding: 100px;
-}
-
-.price-text {
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-.pricing-column {
-  padding: 3% 2%;
+.left{
+  float: right;
 }
 
 /* CTA Section */
