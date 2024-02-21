@@ -146,9 +146,15 @@ p {
 .left{
   float: right;
 }
+#feedback-form-container{
+  box-shadow: 0px 0px 6px;
+}
+
 
 /* CTA Section */
-
+.feedback-title{
+  font-family: "Fredoka", sans-serif;
+}
 
 /* Footer Section */
 
