@@ -158,7 +158,19 @@ p {
 }
 
 @media (max-width: 1028px) {
-
+  body{
+    font-size: 2em;
+  }
+  .featurette{
+    text-align:center;
+  }
+  .col-lg-5{
+    display: flex;
+    justify-content: center;
+  }
+  .text-body-secondary {
+    font-size:20px !important;
+  }
   #title {
     text-align: center;
   }
