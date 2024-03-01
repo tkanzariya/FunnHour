@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta
+      charset="utf-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Game Hour</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png" />
     <!-- Google Fonts -->
@@ -11,15 +15,6 @@
     />
 
     <!-- CSS Stylesheets -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-
-    <!-- Font Awesome -->
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
@@ -35,6 +30,254 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+      body {
+        font-family: "Fredoka", sans-serif;
+        text-align: center;
+      }
+
+      .changeClass {
+        background-color: rgb(179, 132, 5);
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Fredoka", sans-serif;
+      }
+      #Gallery {
+        background-color: #ff8911;
+      }
+      .gallery-img {
+        height: 50rem;
+      }
+      p {
+        color: #8f8f8f;
+      }
+      .feature-img
+      /* Headings */
+
+      .big-heading {
+        font-family: "Fredoka", sans-serif;
+        font-size: 3.5rem;
+        line-height: 1.5;
+      }
+
+      .section-heading {
+        font-size: 3rem;
+        line-height: 1.5;
+      }
+
+      /* Containers */
+
+      .container-fluid {
+        padding: 7% 15%;
+      }
+
+      /* Sections */
+
+      .colored-section {
+        background-color: #f0b864;
+        color: #fff;
+      }
+
+      .white-section {
+        background-color: #fff;
+      }
+
+      /* Navigation Bar */
+
+      .navbar {
+        padding: 0 0 4.5rem;
+      }
+
+      .navbar-brand {
+        font-family: "Ubuntu";
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+
+      .nav-item {
+        padding: 0 18px;
+      }
+
+      .nav-link {
+        color: white;
+        font-size: 1.3rem;
+        font-family: Ubuntu;
+      }
+
+      /* Buttons */
+
+      .download-button {
+        margin: 5% 3% 5% 0;
+      }
+
+      #Registration {
+        background-color: white;
+      }
+
+      #title {
+        background-color: #f0b864;
+        color: #fff;
+        text-align: left;
+      }
+
+      #title .container-fluid {
+        padding: 3% 15% 7%;
+      }
+
+      /* Title Image */
+
+      .title-image {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        transform: rotate(25deg);
+        right: 10%;
+        box-shadow: 5px 5px 10px black;
+      }
+
+      /* Features Section */
+
+      #features {
+        position: relative;
+      }
+
+      .feature-title {
+        font-size: 1.5rem;
+      }
+
+      .feature-box {
+        padding: 4.5%;
+      }
+
+      .icon {
+        color: #ff8911;
+        margin-bottom: 1rem;
+      }
+
+      .icon:hover {
+        color: #f0b864;
+      }
+
+      .featurette {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        font-family: "Fredoka", sans-serif;
+      }
+      #Registration {
+        display: flex;
+        justify-self: center;
+      }
+      .featurette h2 {
+        font-family: "Fredoka", sans-serif;
+      }
+      .feature-img {
+        border-radius: 10%;
+        box-shadow: 1px 1px 3px;
+        width: 100%;
+      }
+      .right {
+        float: left;
+      }
+      .left {
+        float: right;
+      }
+      #feedback-form-container {
+        box-shadow: 0px 0px 6px;
+      }
+
+      /* CTA Section */
+      .feedback-title {
+        font-family: "Fredoka", sans-serif;
+        width: 100%;
+      }
+
+      /* Footer Section */
+
+      .social-icon {
+        margin: 20px 10px;
+      }
+      .nav-link:hover {
+        font-size: 135%;
+        color: #8f8f8f;
+      }
+      .feedbank-nav {
+        color: rgb(255, 255, 255);
+      }
+      .feedbank-nav:hover {
+        color: #bf0004;
+      }
+
+      @media (max-width: 1028px) {
+        body {
+          font-size: 2em;
+        }
+
+        .feature-title {
+          font-size: 1em;
+        }
+
+        .featurette {
+          text-align: center;
+        }
+
+        h2 {
+          font-size: 1em;
+        }
+
+        .col-lg-5 {
+          display: flex;
+          justify-content: center;
+          align-items: center; /* Add this line to vertically center content */
+          flex-direction: column; /* Add this line to stack content vertically */
+        }
+
+        .text-body-secondary {
+          font-size: 1em;
+        }
+
+        #title {
+          text-align: center;
+        }
+
+        .title-image {
+          position: static;
+          transform: rotate(0);
+          margin: 20px 0; /* Add this line to provide space around the image */
+        }
+      }
+      @media (max-width: 480px) {
+        body {
+          font-size: 0.8em;
+        }
+        .lead {
+          font-size: 0.8em;
+        }
+        .title-image {
+          width: 100%;
+          height: 100%;
+        }
+        .colored-section {
+          width: 100%;
+        }
+      }
+    </style>
+    <!-- Font Awesome -->
   </head>
 
   <body>
@@ -71,6 +314,13 @@
                 <a class="nav-link" href="#Registration">Register</a>
               </li>
               <li class="nav-item">
+                <a
+                  class="nav-link animate__animated animate__heartBeat feedbank-nav"
+                  href="#feedback"
+                  >Your Request</a
+                >
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact Us</a>
               </li>
             </ul>
@@ -84,7 +334,7 @@
           </div>
           <div class="col-lg-6">
             <img
-              class="title-image"
+              class="title-image animate__animated animate__backInRight"
               src="./images/Cover.jpg"
               alt="iphone-mockup"
             />
@@ -140,7 +390,7 @@
       <!-- Gallery -->
 
       <hr class="featurette-divider" />
-      <div class="row featurette container-fluid colored-section" id="aboutus">
+      <div class="row featurette container-fluid" id="aboutus">
         <div class="col-lg-7">
           <h2 class="featurette-heading fw-normal lh-1">
             Birthday Events -
@@ -160,14 +410,13 @@
           <img
             src="./images/birthdayGames.jpg"
             class="feature-img right"
-            height="300"
             alt=""
           />
         </div>
       </div>
 
       <hr class="featurette-divider" />
-      <div class="row featurette container-fluid white-section">
+      <div class="row featurette container-fluid">
         <div class="col-lg-7 order-lg-2">
           <h2 class="featurette-heading fw-normal lh-1">
             Social Gathering -
@@ -187,13 +436,12 @@
           <img
             src="./images/indoor games.jpg"
             class="feature-img left"
-            height="300"
             alt=""
           />
         </div>
       </div>
       <hr class="featurette-divider" />
-      <div class="row featurette container-fluid colored-section">
+      <div class="row featurette container-fluid">
         <div class="col-lg-7">
           <h2 class="featurette-heading fw-normal lh-1">
             Game Festival -
@@ -213,7 +461,6 @@
           <img
             src="./images/females playing.jpg"
             class="feature-img right"
-            height="300"
             alt=""
           />
         </div>
@@ -237,16 +484,11 @@
           </p>
         </div>
         <div class="col-lg-5 order-lg-1">
-          <img
-            src="./images/Tug of war.jpg"
-            class="feature-img left"
-            height="300"
-            alt=""
-          />
+          <img src="./images/Tug of war.jpg" class="feature-img left" alt="" />
         </div>
       </div>
       <hr class="featurette-divider" />
-      <div class="row featurette container-fluid colored-section">
+      <div class="row featurette container-fluid">
         <div class="col-lg-7">
           <h2 class="featurette-heading fw-normal lh-1">
             Traditional Games -
@@ -265,7 +507,6 @@
           <img
             src="./images/Traditional Games.webp"
             class="feature-img right"
-            height="300"
             alt=""
           />
         </div>
@@ -290,12 +531,7 @@
           </p>
         </div>
         <div class="col-lg-5 order-lg-1">
-          <img
-            src="./images/themegames.jpg"
-            class="feature-img left"
-            height="300"
-            alt=""
-          />
+          <img src="./images/themegames.jpg" class="feature-img left" alt="" />
         </div>
       </div>
       <hr class="featurette-divider" />
@@ -318,14 +554,16 @@
       <!-- Registration -->
       <section id="Registration">
         <div class="container col-xxl-8 px-4 py-5">
-          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div
+            class="row flex-lg-row-reverse align-items-center g-5 py-5 justify-content-md-center"
+          >
             <div class="col-10 col-sm-8 col-lg-6">
               <img
                 src="./images/HTMAA-thumbnail.png"
-                class="d-block mx-lg-auto img-fluid"
+                class="d-block mx-lg-auto mx-auto img-fluid"
                 alt="Bootstrap Themes"
-                width="700"
-                height="500"
+                width="100%"
+                height="100%"
                 loading="lazy"
               />
             </div>
@@ -346,15 +584,15 @@
             </div>
           </div>
         </div>
-         <hr class="featurette-divider" />
+        <hr class="featurette-divider" />
       </section>
-      <section id="feedback" class="container-fluid ">
+      <section id="feedback" class="container">
         <h1 class="feedback-title">Feedback Form</h1>
         <div id="feedback-form-container">
           <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSciALXKfO8lcWqs3fqx7TdtqWDDlsmiROknmjo2OvJfWRcCqQ/viewform?embedded=true"
-            width="640"
-            height="645"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSeXD-SND3JswpZKUpoe2_4noGiuncLiLpnL6LEfYpATjg5aNw/viewform?embedded=true"
+            width="100%"
+            height="710"
             frameborder="0"
             marginheight="0"
             marginwidth="0"
@@ -397,6 +635,20 @@
           </ul>
         </footer>
       </div>
+      <!-- Google tag (gtag.js) -->
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-2K5X2YLP18"
+      ></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-2K5X2YLP18");
+      </script>
       <script src="index.js"></script>
     </div>
   </body>

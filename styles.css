@@ -2,11 +2,9 @@
 body {
   font-family: "Fredoka", sans-serif;
   text-align: center;
-  background-color: aqua;
 }
-
 .changeClass{
-  background-color: rgb(179, 132, 5);
+  background-color: aqua;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Fredoka", sans-serif;
